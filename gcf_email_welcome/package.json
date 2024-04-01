@@ -4,8 +4,12 @@
   "description": "GCF to email a new subscriber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gcloud functions deploy send_email_welcome --entry-point sendWelcome --runtime nodejs18 --trigger-topic=travel_deals_signup --no-gen2"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.1",
+    "dotenv": "^16.4.5"
+  }
 }

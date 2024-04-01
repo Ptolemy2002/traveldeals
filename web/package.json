@@ -4,12 +4,16 @@
   "description": "TravelDeals Website",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "set-project": "gcloud config set project sp24-412-pbhenson-traveldeals",
+     "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/pubsub": "^4.3.3",
+    "body-parser": "^1.20.2",
     "express": "^4.19.0",
+    "pack": "^2.2.0",
     "path": "^0.12.7"
   }
 }
